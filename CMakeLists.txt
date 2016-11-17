@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(stack_based_on_list)
+project(TK9_calculation_with_queue)
 
 
 set(CMAKE_CURRENT_BINARY_DIR /bin)
