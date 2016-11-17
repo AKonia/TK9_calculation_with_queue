@@ -1,14 +1,16 @@
-// Copyright 2016 Alexandr
-#include "Stack.h"
+// Copyright 2016 AuthorName. All rights reserved.
+#include "queue_extented.h"
 #include <iostream>
-
+using std::cout;
+using std::queue;
 int main() {
-    Stack<int> stk;
-    for (int i = 0; i < 15; i++)
-        stk.push(i);
-    while (!stk.isEmpty()) {
-        std::cout << stk.top() << " ";
-        stk.pop();
-    }
+    queue<int> q;
+  for (int i = 1; i < 10; i++)
+    q.push(i);
+  int sizeOfArr = 0;
+  int * arr = getArrayOfAverageSums(q, sizeOfArr, 3);
+  for (int i = 0; i < sizeOfArr; i++)
+    cout << arr[i]  << " ";
+  delete [] arr;
     return 0;
 }

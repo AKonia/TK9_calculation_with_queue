@@ -4,7 +4,7 @@ include_directories(../include)
 include_directories(../gtest)
 
 file(GLOB headers  "../include/*.h" ../gtest/gtest.h)
-file(GLOB sources test_main.cpp test_stack.cpp ../gtest/gtest-all.cc)
+file(GLOB sources "test*.cpp" ../gtest/gtest-all.cc)
 
 if(UNIX)
 	file(GLOB libraries "*.a")
