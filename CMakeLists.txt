@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
+
 project(TK9_calculation_with_queue)
 
+set(exename "sampleapp")
 
 set(CMAKE_CURRENT_BINARY_DIR /bin)
 set(CMAKE_LIBRARY_PATH /lib)
